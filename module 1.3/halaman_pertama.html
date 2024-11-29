@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="halaman_cantik.css" />
+    <title>Halaman Pertama - Wow!</title>
+  </head>
+  <body>
+    <h1>Hai GenGs, Selamat Datang di Halaman Pertama HTML!</h1>
+    <p>Ini adalah halaman pertamaku, mantap!</p>
+    <a href="https://learn.generationgirl.org/event/codeherpath-2024/"
+      >Klik link ini untuk petualangan seru di CodeHerPath!</a
+    >
+    <!--Tugas 1 & 2-->
+    <button id="button">Klik Aku, GenGs!</button>
+    <img
+      id="gambar"
+      src="https://cdn.dorik.com/64e43d64b8f9d40029a33c3b/64e43ddcb8f9d40029a33c9d/images/genglogo_1omx1jkc.png"
+      alt="Gambar Pertama"
+    />
+    <script>
+      document.getElementById("button").addEventListener("click", function () {
+        alert("Kamu kerenGenGs!");
+      });
+
+      let gambar = document.getElementById("gambar");
+      gambar.addEventListener("mouseover", function () {
+        gambar.src =
+          "https://cdn.dorik.com/64e43ddcb8f9d40029a33c9d/images/Group-5552-ve3dd.png";
+      });
+    </script>
+  </body>
+</html>

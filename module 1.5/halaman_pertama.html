@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="halaman_cantik.css" />
+    <title>GenGs Web</title>
+  </head>
+  <body>
+    <h1 id="judul">Hai GenGs, Selamat Datang!</h1>
+    <p>Ini adalah halaman pertama kita!</p>
+    <img
+      id="gambar"
+      src="https://cdn.dorik.com/64e43d64b8f9d40029a33c3b/64e43ddcb8f9d40029a33c9d/images/genglogo_1omx1jkc.png"
+      alt="Gambar Pertama"
+    />
+    <ul id="daftar">
+      <li>Belajar bersama di CodeHerPath!</li>
+    </ul>
+
+    <script>
+      // Ubah Judul
+      const judul = document.getElementById("judul");
+      judul.innerHTML = "Selamat Datang di CodeHerPath, GenGs! 🎉";
+
+      // Ubah Gambar
+      const gambar = document.getElementById("gambar");
+      gambar.setAttribute(
+        "src",
+        "https://cdn.dorik.com/64e43ddcb8f9d40029a33c9d/images/Group-5552-ve3dd.png"
+      );
+
+      // Tambahkan Element
+      const li = document.createElement("li");
+      li.textContent = "Ikutan event CodeHerPath!";
+
+      const daftar = document.getElementById("daftar");
+      daftar.appendChild(li);
+    </script>
+  </body>
+</html>
